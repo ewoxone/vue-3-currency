@@ -47,4 +47,3 @@ const visible = ref('currencies');
 <style lang="scss">
 
 </style>
-./ElNavButton.vue

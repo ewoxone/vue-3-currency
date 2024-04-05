@@ -23,24 +23,25 @@
 
 		<div class="font-semibold md:text-sm">
 
-			<div class="flex items-center justify-between px-3 py-6 gap-4 border-b border-[#D7D7D7]">
-				<div>USD</div>
-				<div>100 руб</div>
-			</div>
+			<div
+				v-for="(todo,todo_i) in todos"
+				:key="`todo_${todo_i}`"
+				class="flex items-center justify-between px-3 py-6 gap-4 border-b border-[#D7D7D7]"
+			>
 
-			<div class="flex items-center justify-between px-3 py-6 gap-4 border-b border-[#D7D7D7]">
-				<div>USD</div>
-				<div>100 руб</div>
-			</div>
+				<div v-if="todo.title">
+					{{ todo.title }}
+				</div>
 
-			<div class="flex items-center justify-between px-3 py-6 gap-4 border-b border-[#D7D7D7]">
-				<div>USD</div>
-				<div>100 руб</div>
-			</div>
-
-			<div class="flex items-center justify-between px-3 py-6 gap-4 border-b border-[#D7D7D7]">
-				<div>USD</div>
-				<div>100 руб</div>
+				<div
+					class="ml-auto"
+					:class="{
+						'text-green-500': todo.completed,
+						'text-red-500': !todo.completed
+					}"
+				>
+					{{ todo.completed ? 'Выполнена' : 'Не выполнена'}}
+				</div>
 			</div>
 
 		</div>
@@ -52,5 +53,13 @@
 // defineProps([''])
 import ElInput from './ElInput.vue';
 import ElSelect from './ElSelect.vue';
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+
+const store = useStore();
+
+const todos = computed(() => {
+  return store.state.todos
+})
 
 </script>

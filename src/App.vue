@@ -1,6 +1,20 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import { RouterView } from 'vue-router'
+import { useStore } from 'vuex';
+
 import ElNavButton from '@/components/ElNavButton.vue';
+
+const store = useStore();
+// console.log(store)
+
+onMounted(() => {
+ store.dispatch("fetchProducts")
+//  console.log(store.todos);
+})
+
+
+
 </script>
 
 <template>
@@ -8,7 +22,7 @@ import ElNavButton from '@/components/ElNavButton.vue';
     <div class="container">
       <nav class="flex gap-3 pt-10">
         <El-Nav-Button
-          title="Валюты"
+          title="Задачи"
           page="currencies"
         />
 

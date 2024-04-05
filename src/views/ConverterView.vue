@@ -1,8 +1,5 @@
 <script setup lang="ts">
-  import SectionConverter from '@/components/SectionConverter.vue';
-  import { useStore } from 'vuex';
-  const store = useStore();
-  console.log(store)
+import SectionConverter from '@/components/SectionConverter.vue';
 </script>
 
 <template>
