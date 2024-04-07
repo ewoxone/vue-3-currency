@@ -22,13 +22,23 @@ onMounted(() => {
     <div class="container">
       <nav class="flex gap-3 pt-10">
         <El-Nav-Button
-          title="Задачи"
-          page="currencies"
+          title="Таскер"
+          page="tasker"
         />
 
         <El-Nav-Button
           title="Конвертер"
           page="converter"
+        />
+
+        <El-Nav-Button
+          title="Табы"
+          page="tabs"
+        />
+
+        <El-Nav-Button
+          title="Модальные окна"
+          page="modals"
         />
       </nav>
     </div>

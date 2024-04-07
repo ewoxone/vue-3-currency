@@ -1,7 +1,7 @@
 <template v-if="title">
 
 	<RouterLink
-		class="el-button"
+		class="el-nav-button"
 		:to="{ name: page }"
 	>{{ title }}</RouterLink>
 
@@ -14,7 +14,7 @@ defineProps(['title','page'])
 
 <style lang="scss">
 
-	.el-button{
+	.el-nav-button{
 		@apply py-2.5 px-3 text-sm font-medium shadow-firm inline-block align-top text-center select-none
 			rounded-lg transition cursor-pointer
 		;

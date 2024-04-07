@@ -1,21 +1,28 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import CurrenciesView from '../views/CurrenciesView.vue'
+import TaskerView from '../views/TaskerView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'currencies',
-      component: CurrenciesView
+      name: 'tasker',
+      component: TaskerView
     },
     {
       path: '/converter',
       name: 'converter',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/ConverterView.vue')
+    },
+    {
+      path: '/tabs',
+      name: 'tabs',
+      component: () => import('../views/TabsView.vue')
+    },
+    {
+      path: '/modals',
+      name: 'modals',
+      component: () => import('../views/ModalsView.vue')
     }
   ]
 })

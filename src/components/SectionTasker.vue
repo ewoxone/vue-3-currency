@@ -1,17 +1,21 @@
-<template>
+<template v-if="todos?.length">
 	<div
 		class=""
 	>
 		<div class="flex justify-between items-end mb-8">
 
-			<ElInput
-				placeholder="Search"
-				class="w-[11.25rem]"
-			/>
-			<!-- v-model="state.name" -->
+			<div>
+				<div class="mb-1 text-firm-gray text-xs font-medium">Поиск по задачам</div>
+				<ElInput
+					placeholder="Поиск"
+					class="w-[11.25rem]"
+				/>
+				<!-- v-model="state.name" -->
+			</div>
+
 
 			<div class="ml-4">
-				<div class="mb-1 text-firm-gray text-xs font-medium">Currency</div>
+				<div class="mb-1 text-firm-gray text-xs font-medium">Статус</div>
 
 				<ElSelect
 					class=""
