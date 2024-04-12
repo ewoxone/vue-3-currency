@@ -6,29 +6,20 @@ import { useStore } from 'vuex';
 import ElNavButton from '@/components/ElNavButton.vue';
 
 const store = useStore();
-// console.log(store)
 
 onMounted(() => {
- store.dispatch("fetchProducts")
-//  console.log(store.todos);
+ store.dispatch("fetchTodos")
 })
-
-
-
 </script>
 
 <template>
   <header>
     <div class="container">
       <nav class="flex gap-3 pt-10">
-        <El-Nav-Button
-          title="Таскер"
-          page="tasker"
-        />
 
         <El-Nav-Button
-          title="Конвертер"
-          page="converter"
+          title="Модальные окна"
+          page="modals"
         />
 
         <El-Nav-Button
@@ -37,9 +28,15 @@ onMounted(() => {
         />
 
         <El-Nav-Button
-          title="Модальные окна"
-          page="modals"
+          title="Таскер (В разработке)"
+          page="tasker"
         />
+
+        <El-Nav-Button
+          title="Конвертер (В разработке)"
+          page="converter"
+        />
+
       </nav>
     </div>
   </header>

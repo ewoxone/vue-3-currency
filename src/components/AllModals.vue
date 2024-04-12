@@ -1,13 +1,13 @@
 <script setup>
 	import FormFeedback from './FormFeedback.vue';
-	import TestModal from './TestModal.vue';
+	import Modal from './Modal.vue';
 </script>
 
 <template>
 
-	<TestModal>
+	<Modal>
 		<FormFeedback />
-	</TestModal>
+	</Modal>
 
 </template>
 

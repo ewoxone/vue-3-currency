@@ -14,7 +14,7 @@ export default createStore({
       },
     },
     actions: {
-      fetchProducts({ commit }) {
+      fetchTodos({ commit }) {
         const baseURL = "https://jsonplaceholder.typicode.com/todos";
 
         axios
