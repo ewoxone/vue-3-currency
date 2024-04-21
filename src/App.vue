@@ -23,11 +23,6 @@ onMounted(() => {
         />
 
         <El-Nav-Button
-          title="Табы"
-          page="tabs"
-        />
-
-        <El-Nav-Button
           title="Таскер (В разработке)"
           page="tasker"
         />

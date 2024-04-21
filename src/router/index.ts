@@ -15,15 +15,15 @@ const router = createRouter({
       component: () => import('../views/ConverterView.vue')
     },
     {
-      path: '/tabs',
-      name: 'tabs',
-      component: () => import('../views/TabsView.vue')
-    },
-    {
       path: '/modals',
       name: 'modals',
       component: () => import('../views/ModalsView.vue')
-    }
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: () => import('../views/TestView.vue')
+    },
   ]
 })
 
