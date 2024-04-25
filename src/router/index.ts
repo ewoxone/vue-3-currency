@@ -10,20 +10,10 @@ const router = createRouter({
       component: TaskerView
     },
     {
-      path: '/converter',
-      name: 'converter',
-      component: () => import('../views/ConverterView.vue')
-    },
-    {
       path: '/modals',
       name: 'modals',
       component: () => import('../views/ModalsView.vue')
-    },
-    {
-      path: '/test',
-      name: 'test',
-      component: () => import('../views/TestView.vue')
-    },
+    }
   ]
 })
 
