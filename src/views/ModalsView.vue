@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
   import AllModals from '@/components/AllModals.vue';
 </script>
 

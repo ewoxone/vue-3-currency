@@ -13,6 +13,11 @@ const router = createRouter({
       path: '/modals',
       name: 'modals',
       component: () => import('../views/ModalsView.vue')
+    },
+    {
+      path: '/stickyGallery',
+      name: 'stickyGallery',
+      component: () => import('../views/StickyGalleryView.vue')
     }
   ]
 })

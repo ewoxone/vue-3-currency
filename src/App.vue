@@ -27,6 +27,11 @@ onMounted(() => {
 					page="modals"
 				/>
 
+				<El-Nav-Button
+					title="Прилипающая галлерея"
+					page="stickyGallery"
+				/>
+
 			</nav>
 		</div>
 	</header>

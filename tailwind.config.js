@@ -33,6 +33,9 @@ export default {
 			},
 			boxShadow: {
 				'firm': '0px 0px 10px rgba(70, 70, 70, 0.15)',
+			},
+			margin: {
+				'section': '2.5rem',
 			}
 		},
 	},
