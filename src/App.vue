@@ -18,11 +18,6 @@ onMounted(() => {
 			<nav class="flex gap-3 pt-10">
 
 				<El-Nav-Button
-					title="Таскер (В разработке)"
-					page="tasker"
-				/>
-
-				<El-Nav-Button
 					title="Модальные окна"
 					page="modals"
 				/>
@@ -30,6 +25,11 @@ onMounted(() => {
 				<El-Nav-Button
 					title="Прилипающая галлерея"
 					page="stickyGallery"
+				/>
+
+				<El-Nav-Button
+					title="Таскер (В разработке)"
+					page="tasker"
 				/>
 
 			</nav>
